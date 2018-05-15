@@ -4,13 +4,14 @@ var React = require('react'),
     ReactDOM = require('react-dom'),
     FlipMove = require('react-flip-move'),
     PropTypes = require('prop-types'),
+    createReactClass = require('create-react-class'),
     search = require('./search');
 
 /**
  * Geocoder component: connects to Mapbox.com Geocoding API
  * and provides an autocompleting interface for finding locations.
  */
-var Geocoder = React.createClass({
+var Geocoder = createReactClass({
   displayName: 'Geocoder',
   getDefaultProps: function getDefaultProps() {
     return {
